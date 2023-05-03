@@ -1,0 +1,78 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.todo-form {
+  display: flex;
+  max-width: 500px;
+  column-gap: 10px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+}
+
+.todo-form button {
+  padding: 0 30px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  max-width: 500px;
+  row-gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.todo-item:hover {
+  background-color: aliceblue;
+}
+
+.todo-description {
+  flex: 1;
+}
+
+.context-menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+  top: 70px;
+  left: 50px;
+}
+
+.context-menu span {
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.context-menu span:hover {
+  background-color: aliceblue;
+}
+
+.context-menu span:active {
+  background-color: #e7ecf1;
+}
+
+.show {
+  display: flex;
+}
